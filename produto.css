@@ -1,0 +1,87 @@
+.placeholder-imagem {
+      background: #DDD5D0;
+      display: flex; align-items: center; justify-content: center;
+      color: #aaa; font-size: .6rem; letter-spacing: 2px;
+      text-transform: uppercase; text-align: center;
+      border: 1px dashed #bbb; padding: 16px;
+    }
+
+    /* ── Galeria ── */
+    .foto-principal {
+      width: 90%; aspect-ratio: 4/4;
+      overflow: hidden; cursor: zoom-in;
+    }
+    .foto-principal img, .foto-principal .placeholder-imagem {
+      width: 90%; height: 100%; object-fit: cover;
+    }
+
+    .miniaturas { display: flex; flex-direction: column; gap: 10px; }
+
+    .miniatura {
+      width: 80px; height: 100px;
+      overflow: hidden; cursor: pointer;
+      border: 2px solid transparent;
+      transition: border-color .2s;
+      flex-shrink: 0;
+    }
+    .miniatura:hover, .miniatura.ativa { border-color: var(--marrom-escuro); }
+    .miniatura img, .miniatura .placeholder-imagem {
+      width: 100%; height: 100%; object-fit: cover; font-size: .4rem;
+    }
+
+    /* ── Informações do produto ── */
+    .tag-colecao {
+      font-size: .55rem; letter-spacing: 4px;
+      text-transform: uppercase; color: var(--rosa);
+    }
+
+    .nome-produto-detalhe {
+      font-size: 1.6rem; letter-spacing: 3px;
+      text-transform: uppercase; font-weight: 700;
+    }
+
+    .preco-antigo {
+      font-size: .9rem; color: var(--rosa);
+      text-decoration: line-through;
+    }
+
+    .preco-atual {
+      font-size: 1.8rem; font-weight: 700;
+      color: var(--marrom-escuro);
+    }
+
+    .label-info {
+      font-size: .6rem; letter-spacing: 3px;
+      text-transform: uppercase; font-weight: 700;
+      color: var(--marrom-escuro); margin-bottom: 8px;
+    }
+
+    /* Tamanhos */
+    .tamanho {
+      display: inline-block;
+      border: 1px solid #ccc;
+      padding: 6px 14px;
+      font-size: .65rem; font-weight: 600;
+     margin: 0 4px 4px 0;
+    }
+
+
+    /* Botão WhatsApp */
+    .botao-whatsapp {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: linear-gradient(135deg, #1a5c2a, #25D366);
+      color: #fff; text-decoration: none;
+      font-size: .6rem; letter-spacing: 2px;
+      text-transform: uppercase; font-weight: 700;
+      padding: 14px 28px; border-radius: 6px;
+      transition: opacity .2s; width: 100%;
+      justify-content: center;
+    }
+    .botao-whatsapp:hover { opacity: .85; color: #fff; }
+
+    .divisor { border-top: 1px solid #EAE2DC; margin: 24px 0; }
+
+    /* ── Mini abas de navegação ── */
+    .mini-aba { font-size: .6rem; color: var(--rosa); }
+    .mini-aba a { color: var(--rosa); text-decoration: none; }
+    .mini-aba a:hover { color: var(--marrom-escuro); }
