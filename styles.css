@@ -1,0 +1,83 @@
+:root {
+      --marrom-escuro: #1C0606;
+      --marrom-medio:  #401E1E;
+      --pessego:       #FBC493;
+      --rosa:          #948282;
+    }
+
+    body { font-family: 'Inter', sans-serif; color: var(--marrom-escuro); overflow-x: hidden; }
+
+    
+  
+
+    /* ── Placeholder── */
+    .placeholder-imagem {
+      background: #DDD5D0;
+      display: flex; align-items: center; justify-content: center;
+      color: #aaa; font-size: .6rem; letter-spacing: 2px;
+      text-transform: uppercase; text-align: center;
+      border: 1px dashed #bbb; padding: 16px;
+    }
+
+    /* ── Navbar ── */
+    .cabecalho { background-color: var(--marrom-escuro); }
+    .cabecalho .nav-link {
+      font-size: .6rem; letter-spacing: 2px;
+      text-transform: uppercase; color: rgba(255,255,255,.8) !important;
+    }
+    .cabecalho .nav-link:hover { color: var(--pessego) !important; }
+
+    /* ── Hero ── */
+    .hero {
+      min-height: 88vh; position: relative;
+      overflow: hidden; background: var(--marrom-escuro);
+    }
+    .hero .foto-fundo {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%; object-fit: cover; object-position: right top;
+    }
+    .hero {
+      position: relative; inset: 0;
+    }
+    .hero .conteudo {
+      position: relative; z-index: 2;
+    }
+    .hero .titulo {
+      font-size: clamp(2rem, 10vw, 10rem);
+      line-height: .88; letter-spacing: -2px;
+    }
+    .hero .link-cta {
+      font-size: .8rem; letter-spacing: 3px; text-transform: uppercase;
+      color: #fff; text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,.5);
+    }
+    .hero .link-cta:hover { color: var(--pessego); border-color: var(--pessego); }
+
+    /* ── Produtos ── */
+    .foto-produto { aspect-ratio: 3/4; overflow: hidden; }
+    .foto-produto img, .foto-produto .placeholder-imagem { width: 100%; height: 100%; object-fit: cover; }
+    .nome-produto { font-size: .92rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
+    .preco-produto { font-size: .82rem; color: var(--rosa); }
+
+    /* ── Botão padrão escuro ── */
+  .botao-escuro {
+  display: inline-block; color: #fff;
+  font-size: .52rem; letter-spacing: 2px; text-transform: uppercase;
+  font-weight: 700; padding: 11px 20px; text-decoration: none;
+  background: linear-gradient(135deg, #0b4325, #176a4b);
+  border-radius: 6px;
+}
+.botao-escuro:hover { 
+  background: linear-gradient(135deg, #176a4b, #0b4325); 
+  color: #fff; 
+}
+
+    /* ── Rodapé ── */
+    .rodape-link { font-size: .68rem; color: rgba(255,255,255,.45); text-decoration: none; display: block; margin-bottom: 8px; }
+    .rodape-link:hover { color: #fff; }
+    .rodape-social a {
+      width: 34px; height: 34px; border: 1px solid rgba(255,255,255,.15);
+      display: inline-flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,.45); text-decoration: none; font-size: .75rem;
+    }
+    .rodape-social a:hover { border-color: var(--pessego); color: var(--pessego); }
