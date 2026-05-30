@@ -72,3 +72,12 @@
   color: #fff; 
 }
 
+  /* ── Rodapé ── */
+    .rodape-link { font-size: .68rem; color: rgba(255,255,255,.45); text-decoration: none; display: block; margin-bottom: 8px; }
+    .rodape-link:hover { color: #fff; }
+    .rodape-social a {
+      width: 34px; height: 34px; border: 1px solid rgba(255,255,255,.15);
+      display: inline-flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,.45); text-decoration: none; font-size: .75rem;
+    }
+    .rodape-social a:hover { border-color: var(--pessego); color: var(--pessego); }
