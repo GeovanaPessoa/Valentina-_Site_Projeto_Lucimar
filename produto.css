@@ -9,10 +9,10 @@
     /* ── Galeria ── */
     .foto-principal {
       width: 90%; aspect-ratio: 4/4;
-      overflow: hidden; cursor: zoom-in;
+      overflow: hidden;
     }
     .foto-principal img, .foto-principal .placeholder-imagem {
-      width: 90%; height: 100%; object-fit: cover;
+      width: 90%; height: 80%; object-fit: contain;
     }
 
     .miniaturas { display: flex; flex-direction: column; gap: 10px; }
@@ -31,12 +31,12 @@
 
     /* ── Informações do produto ── */
     .tag-colecao {
-      font-size: .55rem; letter-spacing: 4px;
+      font-size: .80rem; letter-spacing: 4px;
       text-transform: uppercase; color: var(--rosa);
     }
 
     .nome-produto-detalhe {
-      font-size: 1.6rem; letter-spacing: 3px;
+      font-size: 1.8rem; letter-spacing: 3px;
       text-transform: uppercase; font-weight: 700;
     }
 
@@ -69,7 +69,7 @@
     /* Botão WhatsApp */
     .botao-whatsapp {
       display: inline-flex; align-items: center; gap: 10px;
-      background: linear-gradient(135deg, #1a5c2a, #25D366);
+      background: linear-gradient(135deg, #176a4b, #0b4325);
       color: #fff; text-decoration: none;
       font-size: .6rem; letter-spacing: 2px;
       text-transform: uppercase; font-weight: 700;
