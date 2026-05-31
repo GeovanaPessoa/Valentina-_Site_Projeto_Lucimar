@@ -63,7 +63,13 @@
     .mb-custom {
    margin-bottom: 100px !important;
 }
+     /* ── links dos produtos ── */
 
+   .link-produto{
+    text-decoration: none;
+    color: #1C0606;
+
+   }
     /* ── Botão padrão escuro ── */
   .botao-escuro {
   display: inline-block; color: #fff;
