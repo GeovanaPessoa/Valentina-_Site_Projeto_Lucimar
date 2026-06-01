@@ -46,14 +46,18 @@
     pointer-events: none;
     }
     .hero {
-      position: relative; inset: 0;
+      position: relative; 
+      inset: 0;
     }
     .hero .conteudo {
-      position: relative; z-index: 2;
+      position: relative; 
+      z-index: 2;
+      
     }
     .hero .titulo {
       font-size: clamp(2rem, 10vw, 10rem);
-      line-height: .88; letter-spacing: -2px;
+      line-height: .88;
+       letter-spacing: -2px;
     }
     .hero .link-cta {
       font-size: .8rem; letter-spacing: 3px; text-transform: uppercase;
