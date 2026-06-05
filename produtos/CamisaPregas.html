@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href=../styles.css>
+    <link rel="stylesheet" href=../produto.css>
+    
+
+  <title>Camisa com pregas</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="icon" href="../Imagens/icone.png" type="image/png">
+</head>
+
+<body>
+
+
+<!--  CABEÇALHO -->
+<nav class="cabecalho navbar navbar-expand-lg sticky-top py-2">
+  <div class="container-fluid px-4">
+
+    <a class="navbar-brand" href="../index.html">
+      <img src="../Imagens/logo-branco.png" alt="Valentina" height="40">
+        </a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <i class="fas fa-bars text-white"></i>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="menu">
+      <ul class="navbar-nav gap-1">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#colecao">Coleção</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#vendendo">Vendendo</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#contato">Contato</a></li>
+         <li class="nav-item"><a class="nav-link" href="../index.html#sobre">Sobre</a></li>
+      </ul>
+     <a href="https://www.instagram.com/valentinapremiumcollection/" aria-label="Instagram" style="color: #EAE2DC; margin-left: 10px;" target="_blank"><i class="fab fa-instagram"></i></a>
+
+
+    </div>
+
+  </div>
+</nav>
+
+
+<!--DETALHE DO PRODUTO-->
+<section class="py-5">
+  <div class="container">
+
+    <!--Mini abas de navegação -->
+    <p class="mini-aba mb-4">
+      <a href="../index.html">Home</a> / 
+      <a href="../index.html#colecao">Coleção</a>/ 
+      <span>Camisa com pregas</span>
+    </p>
+
+    <div class="row g-5">
+
+      <!-- ── Galeria de fotos ── -->
+      <div class="col-md-7">
+        <div class="d-flex gap-3">
+
+          <!-- Miniaturas -->
+          <div class="miniaturas">
+            <div class="miniatura ativa" onclick="trocarFoto(this, '../Imagens/camisa com pregas de viscolinho.png')">
+               <img src="../Imagens/camisa com pregas de viscolinho.png" alt="">
+            </div>
+            <div class="miniatura" onclick="trocarFoto(this, '../Imagens/CamisaPrega2.png')">
+               <img src="../Imagens/CamisaPrega2.png"alt="">
+            </div>
+            <div class="miniatura" onclick="trocarFoto(this, '../Imagens/CamisaPrega3.png')">
+               <img src="../Imagens/CamisaPrega3.png" alt="">
+            </div>
+            
+          </div>
+
+          <!-- Foto principal -->
+          <div class="foto-principal flex-grow-1" id="foto-principal">
+            <img src="../Imagens/camisa com pregas de viscolinho.png" alt="Conjunto em Petra">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── Informações ── -->
+      <div class="col-md-5 d-flex align-items-start">
+        <div class="w-100">
+
+          <p class="tag-colecao mb-1">Coleção Origem</p>
+          <h1 class="nome-produto-detalhe mb-3">Camisa com pregas</h1>
+
+          <p style="font-size:.9rem;line-height:1.8;color:var(--rosa);font-weight:300;" class="mb-4">
+         Camisa com pregas de viscolinho slub, o abotoamento é oculto criando um visual minimalista
+          e alfaiataria fina combinando com short de cintura alta, passante pra cinto com com corte de alfaiataria!
+
+          </p>
+
+        
+
+          <div class="divisor"></div>
+
+          <!-- Tamanhos -->
+          <p class="label-info">Tamanhos</p>
+          <div class="mb-4">
+            <span class="tamanho">P</span>
+            <span class="tamanho">M</span>
+            <span class="tamanho" >G</span>
+            <span class="tamanho">GG</span>
+          </div>
+
+
+          <!-- Botão comprar -->
+          <a    href="https://wa.me/5517988145215?text=Olá! Tenho interesse na Camisa com Pregas"
+             target="_blank" class="botao-whatsapp mb-3">
+            <i class="fab fa-whatsapp fs-5"></i>
+            Comprar pelo Whatsapp
+          </a>
+
+          <!-- Informações extras -->
+          <div class="mt-4">
+            <p class="label-info mb-1">Informações</p>
+            <p style="font-size:.72rem;color:var(--rosa);line-height:1.7;">
+              ✦ Atacado: mínimo 8 peças por grade
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!--RODAPÉ -->
+<footer class="pt-5" style="background:var(--marrom-escuro);">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Coluna: Marca -->
+      <div class="col-12 col-md-4">
+        <img src="../Imagens/logo-branco.png" alt="Valentina" height="40" class="mb-3 d-block">      
+                <p style="font-size:.7rem;color:rgba(255,255,255,.35);line-height:1.7; margin-right: 10px;">
+          Moda feminina com elegância, caimento e identidade. Do P ao XG, com o mesmo cuidado.
+        </p>
+        <div class="rodape-social mt-3 d-flex gap-2">
+          <a href="https://www.instagram.com/valentinapremiumcollection/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/valentinapremiumcollection/?locale=pt_BR" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+      <!-- Coluna: Navegação -->
+      <div class="col-6 col-md-2 ms-md-auto">
+        <p style="font-size:.55rem;letter-spacing:4px;text-transform:uppercase;color:var(--pessego);" class="mb-3">Navegação</p>
+        <a href="#" class="rodape-link">Home</a>
+        <a href="#colecao" class="rodape-link">Coleção</a>
+        <a href="#sobre" class="rodape-link">Sobre</a>
+        <a href="#vendendo" class="rodape-link">Vendendo</a>
+        <a href="#contato" class="rodape-link">Contato</a>
+      </div>
+
+      <!-- Coluna: Coleções -->
+      <div class="col-6 col-md-2">
+        <p style="font-size:.55rem;letter-spacing:4px;text-transform:uppercase;color:var(--pessego);" class="mb-3">Coleções</p>
+        <a href="#" class="rodape-link">Coleção Origem</a>
+        <a href="#" class="rodape-link">Alfaiataria Premium</a>
+        <a href="#" class="rodape-link">Ver Tudo</a>
+      </div>
+
+      <!-- Coluna: Contato -->
+      <div class="col-12 col-md-3">
+        <p style="font-size:.55rem;letter-spacing:4px;text-transform:uppercase;color:var(--pessego);" class="mb-3">Contato</p>
+        <p style="font-size:.68rem;color:rgba(255,255,255,.45);line-height:1.8;">
+          <strong style="color:rgba(255,255,255,.7);display:block;font-size:.6rem;text-transform:uppercase;">Suporte</strong>(17) 99174-1530
+        </p>
+        <p style="font-size:.68rem;color:rgba(255,255,255,.45);line-height:1.8;">
+          <strong style="color:rgba(255,255,255,.7);display:block;font-size:.6rem;text-transform:uppercase;">Loja Física</strong>Shopping Rota da Moda, Rio Preto – SP<br>Seg a Sex · 07h00 às 17h00
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Linha de copyright -->
+    <div class="d-flex justify-content-between flex-wrap gap-2 mt-4 py-3" style="border-top:1px solid rgba(255,255,255,.08);">
+      <span style="font-size:.58rem;color:rgba(255,255,255,.25);">© 2026 Valentina Premium Collection. Todos os direitos reservados.</span>
+      <span style="font-size:.58rem;color:rgba(255,255,255,.25);">Fatec – SP</span>
+    </div>
+
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../Scrip.js"></script>
+
+
+
+
+
+</body>
+</html>
+
+
+
+</html>
