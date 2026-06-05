@@ -108,11 +108,22 @@
     .rodape-social a:hover { border-color: var(--pessego); color: var(--pessego); }
 
 
-@media (max-width: 767px) {
+/*  Sobre  */
+#sobre {
+  position: relative;
+}
+
+.texto-sobre {
+  padding: 30px 20px;
+}
+
+@media (min-width: 768px) {
   .texto-sobre {
-    top: 20px;
-    left: 15px;
-    transform: none;
-    width: calc(100% - 30px);
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    width: 40%;
+    max-width: 500px;
+    padding: 0;
   }
 }
